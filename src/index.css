@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+:root {
+  font-family: "Sofadi One", system-ui;  
+  line-height: 1.5;
+  font-weight: 600;
+
+  color: rgba(255, 255, 255, 0.87);
+  
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+}
+.main-container{
+  background: linear-gradient(45deg, #E2AFDE, #E2E1B9, #D3D2C7);
+  margin-top: 3rem;
+  max-height: 100rem;
+  max-width: 100rem;
+  width: 90vw;
+  height: 90vh;
+  text-align: center;
+  border: 4px solid #274f99;
+  
+  
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.quiz-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* padding: 1rem; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.result{
+  color: #051127;
+  font-size: 1.25rem;
+  margin: 0.5rem;
+
+}
+
+
+.correct {
+	font-family: 'Work Sans', sans-serif;
+	margin: 0.2em;
+	padding: 0.5em 1.5em;
+	border-radius: 25px;
+	background-color: #6aad8c !important;
+	font-weight: 400;
+	color: #ececff;
+	transition: 0.3s;
+	font-size: 1em;
+	border: 1px solid #ececff;
+	filter: drop-shadow(0 0 0.55rem #6aad8c) !important;
+}
+
+.incorrect {
+	font-family: 'Work Sans', sans-serif;
+	margin: 0.2em;
+	padding: 0.5em 1.5em;
+	border-radius: 25px;
+	background-color: red !important;
+	font-weight: 400;
+	color: #ececff;
+	transition: 0.3s;
+	font-size: 1em;
+	border: 1px solid #ececff;
+	filter: drop-shadow(0 0 0.55rem #a70e0e) !important;
+}
+
+.label {
+	display: block;
+	cursor: pointer;
+	font-family: 'Work Sans', sans-serif;
+	margin: 0.2em;
+	padding: 0.5em 1.5em;
+	border-radius: 25px;
+	background-color: #6882d7;
+	font-weight: 400;
+	color: #ececff;
+	transition: 0.3s;
+	font-size: 1rem;
+	border: 1px solid #ececff;
+}
+.even{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.quiz-item{
+  color: #051127;
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+.options {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0.5rem 0;
+}
+.options label:hover {
+	filter: drop-shadow(0 0 0.55rem #6882d7);
+	background-color: #d6dffd;
+	color: #16161D;
+	border: 1px solid #d6dffd;
+}
+
+.options input:checked~label {
+	filter: drop-shadow(0 0 0.55rem #6882d7);
+	background-color: #d6dffd;
+	color: #16161D;
+	border: 1px solid #d6dffd;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 1.1;
+  color: #051127;
+  margin-top: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #f9f9f9;
+  font-family: inherit;
+  background-color: #4D5B9E;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
